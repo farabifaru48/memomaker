@@ -3,7 +3,7 @@
 A free, simple memo / invoice maker for small shops. Works in the browser, no login, no server.
 ছোট দোকানের জন্য ফ্রি মেমো / ইনভয়েস তৈরির টুল। ব্রাউজারেই চলে, লগইন বা সার্ভার লাগে না।
 
-**Live demo / লাইভ লিংক:** https://USERNAME.github.io/memo-maker/
+**Live demo / লাইভ লিংক:** https://farabifaru48.github.io/memo-maker/
 
 ## Features / সুবিধা
 
