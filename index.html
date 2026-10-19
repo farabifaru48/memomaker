@@ -290,24 +290,24 @@ const money = n => '৳' + (Math.round(n * 100) / 100).toLocaleString('en-IN');
 const ic = n => `<svg class="i"><use href="#i-${n}"/></svg>`;
 
 const T = {
- bn: {title:'মেমো তৈরি করুন', sub:'তথ্য লিখুন, মেমো নিজে থেকে তৈরি হবে। শেষে PDF সেভ করুন।',
+ bn: {title:'মেমো তৈরি করুন', sub:'তথ্য লিখুন, মেমো নিজে থেকে তৈরি হবে। শেষে ছবি (PNG) হিসেবে সেভ করুন।',
   profile:'আমার প্রতিষ্ঠান', shop:'প্রতিষ্ঠানের নাম', addr:'ঠিকানা', phone:'ফোন', upload:'লোগো দিন', rmlogo:'লোগো সরান',
   delC:'এই প্রতিষ্ঠান ও এর সব পুরনো মেমো মুছতে ৩ সেকেন্ডের মধ্যে আবার ট্র্যাশ আইকনে চাপুন।', unnamed:'নামহীন প্রতিষ্ঠান', hint:'প্রতিষ্ঠানের তথ্য ও লোগো শুধু এই ব্রাউজারে সেভ থাকে, কোথাও আপলোড হয় না।',
   memo:'কাস্টমারের তথ্য', memoT:'মেমো নং ও তারিখ', memoHint:'মেমো নম্বর নিজে থেকে একটা একটা করে বাড়ে, তারিখ হয় আজকের তারিখ। দরকার হলে এখান থেকে বদলান।', ok:'ঠিক আছে', no:'মেমো নং', date:'তারিখ', cname:'কাস্টমারের নাম', cphone:'কাস্টমারের ফোন', caddr:'কাস্টমারের ঠিকানা',
   items:'পণ্য', iname:'পণ্যের নাম', qty:'পরিমাণ', price:'দাম', add:'পণ্য যোগ করুন', calc:'হিসাব',
-  disc:'ডিসকাউন্ট (৳)', ship:'ডেলিভারি চার্জ (৳)', paid:'পরিশোধ করেছে (৳)', note:'নোট', print:'প্রিন্ট করুন', dl:'PDF ডাউনলোড', share:'শেয়ার', making:'তৈরি হচ্ছে…', pdfErr:'PDF তৈরি করা যায়নি। ইন্টারনেট চালু আছে কিনা দেখুন।',
-  fallback:'এই ডিভাইসে সরাসরি শেয়ার সম্ভব নয়, তাই PDF ডাউনলোড হয়েছে। ফাইলটি WhatsApp বা Messenger-এ পাঠান।', again:'PDF তৈরি হয়েছে, শেয়ার বাটন আবার চাপুন।',
-  shareHint:'ফোনে শেয়ার চাপলে PDF সরাসরি WhatsApp, Messenger বা অন্য অ্যাপে পাঠানো যায়।', newM:'নতুন মেমো', design:'মেমোর ডিজাইন ও রং', hist:'পুরনো মেমো', foot:'মেমোর শেষের বার্তা', footHint:'মেমোর একদম নিচে এই লেখা বসবে। ফাঁকা রাখলে “ধন্যবাদ, আবার আসবেন।” বসবে।', addBiz:'নতুন প্রতিষ্ঠান যোগ করুন', saveBiz:'সেভ করুন', listT:'আমার প্রতিষ্ঠান', isDef:'ডিফল্ট', defSet:'ডিফল্ট সেট হয়েছে', needName:'প্রতিষ্ঠানের নাম লিখুন', bizFirst:'আপনার প্রতিষ্ঠানের তথ্য দিন', bizFirstSub:'প্রথমবার একবারই দিতে হবে। পরে উপরের তিন ডট (⋮) মেনু থেকে বদলানো বা নতুন প্রতিষ্ঠান যোগ করা যাবে।', bizNewT:'নতুন প্রতিষ্ঠান', bizEditT:'প্রতিষ্ঠানের তথ্য', defHint:'নামে চাপলে এখনকার জন্য সেই প্রতিষ্ঠান বেছে নেওয়া হবে। তারা (★) চাপলে সেটা ডিফল্ট হবে, অ্যাপ খুললেই ডিফল্ট প্রতিষ্ঠান আসবে।', hq:'মেমো নং বা নাম', hdl:'তারিখ অনুযায়ী', hall:'ফিল্টার মুছুন', hEmpty:'কোনো মেমো পাওয়া যায়নি। PDF ডাউনলোড, শেয়ার বা প্রিন্ট করলে মেমো এখানে সেভ হয়।', hDel:'এই মেমো মুছতে ৩ সেকেন্ডের মধ্যে আবার ট্র্যাশ আইকনে চাপুন।', classic:'ক্লাসিক', card:'কার্ড', saveNote:'ডিফল্ট নোট হিসেবে সেভ', saved:'সেভ হয়েছে', noteHint:'এই নোট প্রতিটা মেমোতে ছাপা হবে, যেমন এক্সচেঞ্জের নিয়ম। দরকার না হলে ফাঁকা রাখুন।',
+  disc:'ডিসকাউন্ট (৳)', ship:'ডেলিভারি চার্জ (৳)', paid:'পরিশোধ করেছে (৳)', note:'নোট', print:'প্রিন্ট করুন', dl:'ছবি ডাউনলোড (PNG)', share:'শেয়ার', making:'তৈরি হচ্ছে…', pdfErr:'ছবি তৈরি করা যায়নি। ইন্টারনেট চালু আছে কিনা দেখুন।',
+  fallback:'এই ডিভাইসে সরাসরি শেয়ার সম্ভব নয়, তাই ছবি ডাউনলোড (PNG) হয়েছে। ফাইলটি WhatsApp বা Messenger-এ পাঠান।', again:'ছবি তৈরি হয়েছে, শেয়ার বাটন আবার চাপুন।',
+  shareHint:'ফোনে শেয়ার চাপলে ছবি সরাসরি WhatsApp, Messenger বা অন্য অ্যাপে পাঠানো যায়।', newM:'নতুন মেমো', design:'মেমোর ডিজাইন ও রং', hist:'পুরনো মেমো', foot:'মেমোর শেষের বার্তা', footHint:'মেমোর একদম নিচে এই লেখা বসবে। ফাঁকা রাখলে “ধন্যবাদ, আবার আসবেন।” বসবে।', addBiz:'নতুন প্রতিষ্ঠান যোগ করুন', saveBiz:'সেভ করুন', listT:'আমার প্রতিষ্ঠান', isDef:'ডিফল্ট', defSet:'ডিফল্ট সেট হয়েছে', needName:'প্রতিষ্ঠানের নাম লিখুন', bizFirst:'আপনার প্রতিষ্ঠানের তথ্য দিন', bizFirstSub:'প্রথমবার একবারই দিতে হবে। পরে উপরের তিন ডট (⋮) মেনু থেকে বদলানো বা নতুন প্রতিষ্ঠান যোগ করা যাবে।', bizNewT:'নতুন প্রতিষ্ঠান', bizEditT:'প্রতিষ্ঠানের তথ্য', defHint:'নামে চাপলে এখনকার জন্য সেই প্রতিষ্ঠান বেছে নেওয়া হবে। তারা (★) চাপলে সেটা ডিফল্ট হবে, অ্যাপ খুললেই ডিফল্ট প্রতিষ্ঠান আসবে।', hq:'মেমো নং বা নাম', hdl:'তারিখ অনুযায়ী', hall:'ফিল্টার মুছুন', hEmpty:'কোনো মেমো পাওয়া যায়নি। ছবি ডাউনলোড (PNG), শেয়ার বা প্রিন্ট করলে মেমো এখানে সেভ হয়।', hDel:'এই মেমো মুছতে ৩ সেকেন্ডের মধ্যে আবার ট্র্যাশ আইকনে চাপুন।', classic:'ক্লাসিক', card:'কার্ড', saveNote:'ডিফল্ট নোট হিসেবে সেভ', saved:'সেভ হয়েছে', noteHint:'এই নোট প্রতিটা মেমোতে ছাপা হবে, যেমন এক্সচেঞ্জের নিয়ম। দরকার না হলে ফাঁকা রাখুন।',
   cash:'ক্যাশ মেমো', cust:'কাস্টমার', item:'পণ্য', sub2:'সাবটোটাল', dis:'ডিসকাউন্ট', del:'ডেলিভারি', total:'সর্বমোট',
   paidL:'পরিশোধ', due:'বাকি', paidS:'পরিশোধিত', thanks:'ধন্যবাদ, আবার আসবেন।', empty:'পণ্য যোগ করুন', shopDef:'প্রতিষ্ঠানের নাম', noteL:'নোট', langBtn:'English', err:'সেভ করা যায়নি, লোগো ছোট করে দিন।'},
- en: {title:'Memo Maker', sub:'Fill in the details and the memo builds itself. Save it as PDF when done.',
+ en: {title:'Memo Maker', sub:'Fill in the details and the memo builds itself. Save it as an image (PNG) when done.',
   profile:'My business', shop:'Business name', addr:'Address', phone:'Phone', upload:'Add logo', rmlogo:'Remove logo',
   delC:'Tap the trash icon again within 3 seconds to delete this business and all its past memos.', unnamed:'Unnamed business', hint:'Business details and logo are saved only in this browser. Nothing is uploaded.',
   memo:'Customer', memoT:'Memo no. and date', memoHint:'The memo number counts up by one on its own and the date is today. Change them here if you need to.', ok:'Done', no:'Memo no.', date:'Date', cname:'Customer name', cphone:'Customer phone', caddr:'Customer address',
   items:'Items', iname:'Item name', qty:'Qty', price:'Price', add:'Add item', calc:'Totals',
-  disc:'Discount (৳)', ship:'Delivery charge (৳)', paid:'Paid (৳)', note:'Note', print:'Print', dl:'Download PDF', share:'Share', making:'Preparing…', pdfErr:'Could not make the PDF. Check your internet connection.',
-  fallback:'Direct sharing is not supported here, so the PDF was downloaded. Send the file on WhatsApp or Messenger.', again:'PDF is ready. Tap Share again.',
-  shareHint:'On a phone, Share sends the PDF straight to WhatsApp, Messenger or any app.', newM:'New memo', design:'Memo design and color', hist:'Past memos', foot:'Message at the bottom of the memo', footHint:'This text is printed at the bottom of every memo. Leave it empty to use “Thank you, visit again.”', addBiz:'Add new business', saveBiz:'Save', listT:'My businesses', isDef:'Default', defSet:'Default set', needName:'Enter the business name', bizFirst:'Enter your business details', bizFirstSub:'You only do this once. Later, use the three-dot menu at the top to edit or add another business.', bizNewT:'New business', bizEditT:'Business info', defHint:'Tap a name to use that business for now. Tap the star to make it the default, which opens every time you start the app.', hq:'Memo no. or name', hdl:'Filter by date', hall:'Clear filters', hEmpty:'No memos found. Memos are saved here when you download, share or print.', hDel:'Tap the trash icon again within 3 seconds to delete this memo.', classic:'Classic', card:'Card', saveNote:'Save as default note', saved:'Saved', noteHint:'This note is printed on every memo, for example your exchange policy. Leave it empty if you do not need it.',
+  disc:'Discount (৳)', ship:'Delivery charge (৳)', paid:'Paid (৳)', note:'Note', print:'Print', dl:'Download Image (PNG)', share:'Share', making:'Preparing…', pdfErr:'Could not make the image. Check your internet connection.',
+  fallback:'Direct sharing is not supported here, so the image was downloaded. Send the image on WhatsApp or Messenger.', again:'Image is ready. Tap Share again.',
+  shareHint:'On a phone, Share sends the image straight to WhatsApp, Messenger or any app.', newM:'New memo', design:'Memo design and color', hist:'Past memos', foot:'Message at the bottom of the memo', footHint:'This text is printed at the bottom of every memo. Leave it empty to use “Thank you, visit again.”', addBiz:'Add new business', saveBiz:'Save', listT:'My businesses', isDef:'Default', defSet:'Default set', needName:'Enter the business name', bizFirst:'Enter your business details', bizFirstSub:'You only do this once. Later, use the three-dot menu at the top to edit or add another business.', bizNewT:'New business', bizEditT:'Business info', defHint:'Tap a name to use that business for now. Tap the star to make it the default, which opens every time you start the app.', hq:'Memo no. or name', hdl:'Filter by date', hall:'Clear filters', hEmpty:'No memos found. Memos are saved here when you download, share or print.', hDel:'Tap the trash icon again within 3 seconds to delete this memo.', classic:'Classic', card:'Card', saveNote:'Save as default note', saved:'Saved', noteHint:'This note is printed on every memo, for example your exchange policy. Leave it empty if you do not need it.',
   cash:'Cash Memo', cust:'Customer', item:'Item', sub2:'Subtotal', dis:'Discount', del:'Delivery', total:'Total',
   paidL:'Paid', due:'Due', paidS:'PAID', thanks:'Thank you, visit again.', empty:'Add an item', shopDef:'Business name', noteL:'Note', langBtn:'বাংলা', err:'Could not save. Try a smaller logo.'}
 };
@@ -517,8 +517,7 @@ const loadJS = u => new Promise((ok, no) => {
 });
 let libs = null;
 const needLibs = () => libs || (libs = Promise.all([
-  window.html2canvas ? 0 : loadJS('https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js'),
-  window.jspdf ? 0 : loadJS('https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js')
+  window.html2canvas ? 0 : loadJS('https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js')
 ]).catch(e => { libs = null; throw e; }));
 let cache = {key: '', blob: null};
 async function getPDF() {
@@ -530,22 +529,16 @@ async function getPDF() {
   c.removeAttribute('id'); c.classList.add('pdf');
   document.body.appendChild(c);
   let cv;
-  try { cv = await html2canvas(c, {scale: 2, backgroundColor: '#fff', useCORS: true}); }
-  finally { c.remove(); }
-  const pdf = new window.jspdf.jsPDF({unit: 'mm', format: 'a4'});
-  const m = 10, w = 210 - 2 * m, pageH = 297 - 2 * m, pxPage = Math.floor(pageH / w * cv.width);
-  for (let y = 0, first = true; y < cv.height; y += pxPage) {
-    const sh = Math.min(pxPage, cv.height - y), pc = document.createElement('canvas');
-    pc.width = cv.width; pc.height = sh;
-    pc.getContext('2d').drawImage(cv, 0, y, cv.width, sh, 0, 0, cv.width, sh);
-    if (!first) pdf.addPage();
-    pdf.addImage(pc.toDataURL('image/jpeg', 0.92), 'JPEG', m, m, w, sh / cv.width * w);
-    first = false;
+  try {
+    const sc = Math.max(1.5, Math.min(3, 15000 / (c.offsetHeight || 1000)));
+    cv = await html2canvas(c, {scale: sc, backgroundColor: '#ffffff', useCORS: true});
   }
-  cache = {key, blob: pdf.output('blob')};
-  return cache.blob;
+  finally { c.remove(); }
+  const blob = await new Promise((ok, no) => cv.toBlob(x => x ? ok(x) : no(new Error('png')), 'image/png'));
+  cache = {key, blob};
+  return blob;
 }
-const fname = () => 'memo-' + ($('no').value || 'x').replace(/[^\w\u0980-\u09FF-]/g, '') + '.pdf';
+const fname = () => 'memo-' + ($('no').value || 'x').replace(/[^\w\u0980-\u09FF-]/g, '') + '.png';
 function summary() {
   const v = k => $(k).value;
   const sub = items.reduce((s, it) => s + (+it.q || 0) * (+it.p || 0), 0);
@@ -569,7 +562,7 @@ async function saveBlob(b, name) {
 }
 $('dl').onclick = () => busy($('dl'), async () => { const b = await getPDF(); await saveBlob(b, fname()); saveMemo(); });
 $('share').onclick = () => busy($('share'), async () => {
-  const b = await getPDF(), f = new File([b], fname(), {type: 'application/pdf'});
+  const b = await getPDF(), f = new File([b], fname(), {type: 'image/png'});
   saveMemo();
   if (navigator.canShare && navigator.canShare({files: [f]})) {
     try { await navigator.share({files: [f], title: P().shop || 'Memo', text: summary()}); }
